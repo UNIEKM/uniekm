@@ -96,13 +96,37 @@ nav a {
 
 .cta-button {
     text-decoration: none;
-    background: #e8491d;
+    background: #0586d1;
     color: #fff;
-    padding: 10px 20px;
+    padding: 10px 50px; /* Wider padding for UFO shape */
     font-size: 1.2em;
-    border-radius: 5px;
+    border-radius: 50px; /* Very rounded for UFO shape */
     transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative; /* Needed for after pseudo element */
+    overflow: hidden; /* Ensures inner lighting doesn't go outside the button */
 }
+
+/* Adding lighting effect at the bottom of the UFO */
+.cta-button::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%; /* Adjust as needed for lighting width */
+    height: 15px; /* Adjust as needed for lighting height */
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent white for light effect */
+    border-radius: 50%;
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.5); /* Glowing effect */
+}
+
+.cta-button:hover {
+    background: #036ba4; /* Slightly darker blue on hover */
+    transform: translateY(-2px); /* Button moves up, like UFO hovering */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+
 
 .cta-button:hover {
     background: #333;
