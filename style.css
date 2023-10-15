@@ -25,6 +25,7 @@ header {
     align-items: center;
     position: relative;
     z-index: 2;
+    user-select: none;
 }
 
 #logo, nav ul, nav ul li, nav a {
@@ -71,11 +72,13 @@ nav a {
     margin-bottom: 20px;
     margin-top: 8%;
     font-family: 'Pacifico', cursive;
+    user-select: none;
 }
 
 #hero p {
     font-size: 1.6em;
     margin-bottom: 30px;
+    user-select: none;
 }
 
 #particles-js {
@@ -102,6 +105,7 @@ nav a {
     transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     position: relative; /* Needed for after pseudo-element */
     overflow: hidden; /* Ensures inner lighting doesn't go outside the button */
+    user-select: none;
 }
 
 /* Adding lighting effect at the bottom of the UFO */
@@ -136,6 +140,7 @@ footer {
 #logo a, .header-logo, .footer-logo, .brand-name, footer p {
     position: relative;
     z-index: 2;
+    user-select: none;
 }
 
 #logo a {
