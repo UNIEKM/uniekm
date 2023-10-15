@@ -51,6 +51,11 @@ nav a {
     font-size: 0.9em;
 }
 
+nav a:focus {
+    outline: 2px solid #0586d1;  /* Adjust color as per your design */
+}
+
+
 /* Hero Section Styling */
 #hero {
     
@@ -69,7 +74,7 @@ nav a {
     font-size: 5em;
     align-self: center;
     margin-bottom: 20px;
-    margin-top: 8%;
+    margin-top: 5%;
     font-family: 'Pacifico', cursive;
     user-select: none;
 }
@@ -282,7 +287,7 @@ body {
     }
 }
 
-/* Mobile navigation (Hamburger Menu) */
+/* Mobile Styles and Hamburger Menu */
 @media only screen and (max-width: 480px) {
     #mobile-menu-icon {
         display: block;
@@ -297,14 +302,19 @@ body {
         width: 100%;
         top: 60px;
         left: 0;
+        padding: 10px 0;  /* Added padding */
     }
 
     nav ul li {
         display: block;
-        margin: 10px 0;
+        margin: 15px 0; /* Increased margin */
     }
 
     nav ul.active {
-        display: block;
+        display: flex; /* Adjusted to use flex instead of block */
+    }
+    
+    nav a {
+        padding: 15px 20px; /* Added padding to links for larger touch targets */
     }
 }
