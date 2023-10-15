@@ -108,6 +108,7 @@ nav a:focus {
     color: #fff;
     padding: 10px 50px; /* Wider padding for UFO shape */
     font-size: 1em;
+  
     border-radius: 50px; /* Very rounded for UFO shape */
     transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     position: relative; /* Needed for after pseudo-element */
