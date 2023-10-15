@@ -296,12 +296,31 @@ body {
 
     #mobile-menu-icon {
         display: block;
-        font-size: 24px;
-        color: #0586d1;
+        /* Removed font-size and color as it's not needed with the bar approach */
         cursor: pointer;
         padding: 15px;
         background-color: #161616;
-        
+        position: relative; /* Ensure the position is relative for the bars to position correctly */
+    }
+    /* Additions for the hamburger to 'X' animation: */
+    .bar1, .bar2, .bar3 {
+        background-color: #0586d1;
+        height: 3px;
+        width: 20px;  /* Adjust width accordingly */
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    #mobile-menu-icon.toggle .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    #mobile-menu-icon.toggle .bar2 {opacity: 0;}
+
+    #mobile-menu-icon.toggle .bar3 {
+        -webkit-transform: rotate(45deg) translate(-5px, -6px);
+        transform: rotate(45deg) translate(-5px, -6px);
     }
 
     nav ul {
