@@ -50,12 +50,13 @@ nav a {
 }
 
 #hero h1 {
-    font-size: 2.5em;
+    font-size: 6.5em;
     margin-bottom: 20px;
+    font-family: 'Pacifico', cursive;
 }
 
 #hero p {
-    font-size: 1.2em;
+    font-size: 1.6em;
     margin-bottom: 30px;
 }
 
@@ -87,6 +88,66 @@ footer {
 body {
     font-size: 18px;
 }
+
+#logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Removes underline from the link */
+    color: inherit; /* Takes on color from parent, or specify a color */
+}
+
+.header-logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+
+
+.footer-logo {
+    width: 20px;  /* Small screens: reduced from 50px to 25px */
+    height: auto;
+    margin-right: 10px;
+    transform: rotate(310deg);
+  
+}
+
+.brand-name {
+    color: #0586d1;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Medium screens */
+@media only screen and (min-width: 600px) {
+    .footer-logo {
+        width: 35px;  /* Medium screens: reduced from 70px to 35px */
+    }
+}
+
+/* Large screens */
+@media only screen and (min-width: 900px) {
+    .footer-logo {
+        width: 50px;  /* Large screens: reduced from 100px to 50px */
+    }
+
+    .brand-name {
+        font-size: 1.2em;
+    }
+}
+
+
+
 
 @media only screen and (max-width: 1200px) {
     body {
