@@ -219,36 +219,36 @@ body {
 /* Tablets - landscape and portrait */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     #hero h1 {
-        font-size: 3em; /* Decreased font size for Samsung S21+ */
+        font-size: 2em; /* Decreased font size for Samsung S21+ */
     }
 
     nav a {
-        font-size: 0.7em; /* Decreased font size for Samsung S21+ */
+        font-size: 0.5em; /* Decreased font size for Samsung S21+ */
     }
 
     footer p {
-        font-size: 0.6em; /* Decreased font size for Samsung S21+ */
+        font-size: 0.5em; /* Decreased font size for Samsung S21+ */
     }
 
     .cta-button {
         padding: 8px 16px; /* Adjusted padding for smaller screens */
-        font-size: 0.7em; /* Adjusted font size for smaller screens */
+        font-size: 0.6em; /* Adjusted font size for smaller screens */
     }
 }
 
 /* Small desktops and laptops */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     #hero h1 {
-        font-size: 5em; /* Decreased font size for Samsung S21+ */
+        font-size: 4em; /* Decreased font size for Samsung S21+ */
     }
 
     nav a {
-        font-size: 1em; /* Adjusted font size for Samsung S21+ */
+        font-size: 0.7em; /* Adjusted font size for Samsung S21+ */
     }
 
     .cta-button {
         padding: 9px 18px;
-        font-size: 1.15em;
+        font-size: 1em;
     }
 }
 
