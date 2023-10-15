@@ -113,6 +113,7 @@ nav a:focus {
     position: relative; /* Needed for after pseudo-element */
     overflow: hidden; /* Ensures inner lighting doesn't go outside the button */
     user-select: none;
+    z-index: 10;
 }
 
 /* Adding lighting effect at the bottom of the UFO */
