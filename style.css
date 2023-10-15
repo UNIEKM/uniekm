@@ -54,7 +54,7 @@ nav a {
 
 /* Hero Section Styling */
 #hero {
-    background: url('your-hero-image.jpg') no-repeat center center/cover;
+    
     color: #fff;
     text-align: center;
     padding: 6em 2em;
@@ -136,6 +136,20 @@ footer {
     padding: 1em 2em;
     z-index: 2;
 }
+
+/* Style for the UFO icon container */
+.ufo-icon-container {
+    float: left; /* Float the container to the left */
+    margin-right: 10px; /* Adjust the margin as needed for spacing */
+}
+
+/* Style for the UFO icon */
+.ufo-icon {
+    width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    vertical-align: middle; /* Vertically align the icon with the text */
+}
+
 
 #logo a, .header-logo, .footer-logo, .brand-name, footer p {
     position: relative;
