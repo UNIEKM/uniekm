@@ -31,7 +31,7 @@
             }
         },
         "size": {
-            "value": 4,
+            "value": 5.5,
             "random": true,
             "anim": {
                 "enable": true,
@@ -72,7 +72,7 @@
         },
         "modes": {
             "grab": {
-                "distance": 200,
+                "distance": 300,
                 "line_linked": {
                     "opacity": 0.5
                 }
