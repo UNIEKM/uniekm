@@ -289,8 +289,19 @@ body {
 
 /* Mobile Styles and Hamburger Menu */
 @media only screen and (max-width: 480px) {
+    body {
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;  /* Ensuring consistency in font usage */
+    }
+
     #mobile-menu-icon {
         display: block;
+        font-size: 24px;
+        color: #0586d1;
+        cursor: pointer;
+        padding: 15px;
+        background-color: #161616;
+        
     }
 
     nav ul {
@@ -298,23 +309,37 @@ body {
         flex-direction: column;
         align-items: center;
         position: absolute;
-        background-color: #333;
-        width: 100%;
+        background-color: #0586d1;
+        width: max-content;
         top: 60px;
-        left: 0;
-        padding: 10px 0;  /* Added padding */
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     }
 
     nav ul li {
         display: block;
-        margin: 15px 0; /* Increased margin */
+        margin: 15px 0;
+        white-space: nowrap;
     }
 
     nav ul.active {
-        display: flex; /* Adjusted to use flex instead of block */
+        display: flex;
     }
     
     nav a {
-        padding: 15px 20px; /* Added padding to links for larger touch targets */
+        padding: 15px 20px;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+        background-color: #0369a1;
     }
 }
+
