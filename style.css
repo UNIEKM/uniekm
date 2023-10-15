@@ -139,8 +139,9 @@ footer {
 
 /* Style for the UFO icon container */
 .ufo-icon-container {
-    float: left; /* Float the container to the left */
+    display: inline-block; /* Display the container inline with the text */
     margin-right: 10px; /* Adjust the margin as needed for spacing */
+    vertical-align: middle; /* Vertically align the container with the text */
 }
 
 /* Style for the UFO icon */
