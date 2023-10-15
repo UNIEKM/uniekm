@@ -15,7 +15,6 @@ body {
     flex-direction: column;
 }
 
-
 /* Header Styling */
 header {
     background: #0e0e0e2f;
@@ -93,7 +92,6 @@ nav a {
     border-radius: 100px;  /* Adjust this value as needed */
 }
 
-
 .cta-button {
     text-decoration: none;
     background: #0586d1;
@@ -102,7 +100,7 @@ nav a {
     font-size: 1.2em;
     border-radius: 50px; /* Very rounded for UFO shape */
     transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative; /* Needed for after pseudo element */
+    position: relative; /* Needed for after pseudo-element */
     overflow: hidden; /* Ensures inner lighting doesn't go outside the button */
 }
 
@@ -123,14 +121,6 @@ nav a {
 .cta-button:hover {
     background: #036ba4; /* Slightly darker blue on hover */
     transform: translateY(-2px); /* Button moves up, like UFO hovering */
-    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
-}
-
-
-
-.cta-button:hover {
-    background: #333;
-    transform: translateY(-2px);
     box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -205,12 +195,6 @@ nav {
 body {
     font-size: 18px;
 }
-
-
-
-/* Mobile-first default styles remain the same as you provided... */
-
-/* Responsive designs */
 
 /* Tablets - landscape and portrait */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -310,4 +294,3 @@ body {
         display: block;
     }
 }
-
