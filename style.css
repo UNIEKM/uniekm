@@ -105,7 +105,7 @@ nav a:focus {
     font-size: 6em;
     align-self: center;
     margin-bottom: 20px;
-    margin-top: 1%;
+    margin-top: 0.7%;
     font-family: 'Pacifico', cursive;
     user-select: none;
 }
@@ -347,7 +347,7 @@ body {
         /* Removed font-size and color as it's not needed with the bar approach */
         cursor: pointer;
         padding: 15px;
-        background-color: #161616;
+        /* background-color: #161616; */
         position: relative; /* Ensure the position is relative for the bars to position correctly */
     }
     /* Additions for the hamburger to 'X' animation: */
