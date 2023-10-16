@@ -145,40 +145,40 @@ nav a:focus {
 
 .cta-button {
     text-decoration: none;
-    background: #0586d1;
+    background: linear-gradient(135deg, #0586d1, #004e7a); /* Modified gradient */
     color: #fff;
-    padding: 10px 50px; /* Wider padding for UFO shape */
-    font-size: 1em;
-   
-    border-radius: 50px; /* Very rounded for UFO shape */
-    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative; /* Needed for after pseudo-element */
-    overflow: hidden; /* Ensures inner lighting doesn't go outside the button */
-    user-select: none;
-    z-index: 10;
+    padding: 12px 55px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 50px;
+    transition: background 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
+    font-weight: 600; /* Bolder text */
     font-family: 'Montserrat', sans-serif;
-   
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.25); /* More pronounced shadow */
+    position: relative; /* For the pseudo-elements */
 }
 
-/* Adding lighting effect at the bottom of the UFO */
+/* Enhanced lighting effect */
 .cta-button::after {
     content: "";
     position: absolute;
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
-    width: 80%; /* Adjust as needed for lighting width */
-    height: 15px; /* Adjust as needed for lighting height */
-    background: rgba(255, 255, 255, 0.5); /* Semi-transparent white for light effect */
+    width: 90%; /* Wider light beam */
+    height: 20px;
+    background: rgba(255, 255, 255, 0.6); /* Brighter light effect */
     border-radius: 50%;
-    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.5); /* Glowing effect */
+    box-shadow: 0 0 20px 4px rgba(255, 255, 255, 0.6); /* Enhanced glowing effect */
+    z-index: -1; /* Ensures lighting doesn't overlap text */
 }
 
 .cta-button:hover {
-    background: #036ba4; /* Slightly darker blue on hover */
-    transform: translateY(-2px); /* Button moves up, like UFO hovering */
-    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #004e7a, #0586d1); /* Gradient shift on hover */
+    transform: translateY(-3px); /* More pronounced hover effect */
+    box-shadow: 0 9px 25px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
 }
+
 
 /* Footer Styling */
 footer {
