@@ -82,7 +82,7 @@ nav a:focus {
 
 #hero p {
     font-size: 1.2em;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     user-select: none;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-weight: 600; /* Adjust value as needed */
@@ -131,7 +131,7 @@ nav a:focus {
     width: 100%;
     height: 100%;
     z-index: 1;
-    opacity: 0.7;
+    opacity: 0.8;
     border-radius: 100px;  /* Adjust this value as needed */
 }
 
@@ -147,40 +147,58 @@ nav a:focus {
 
 .cta-button {
     text-decoration: none;
-    background: linear-gradient(135deg, #0586d1, #004e7a); /* Modified gradient */
+    background: linear-gradient(135deg, #080808d5, #080808);
     color: #fff;
-    padding: 8px 35px;
+    padding: 12px 45px;
     font-size: 1.1em;
     border: none;
-    border-radius: 35px;
+    border-radius: 50px;  /* Full rounded edges */
     transition: background 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
-    font-weight: 510; /* Bolder text */
+    font-weight: 510;
     font-family: 'Montserrat', sans-serif;
-    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.25); /* More pronounced shadow */
-    position: relative; /* For the pseudo-elements */
-    opacity: 0.8;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    position: relative;
+    opacity: 0.9;
+
+    /* New Styles */
+    overflow: hidden; /* Hide overflow for pseudo-element animations */
 }
 
-/* Enhanced lighting effect */
-.cta-button::after {
-    content: "";
+.cta-button::before {
+    content: '';
     position: absolute;
-    bottom: -15px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
-    width: 75%; /* Wider light beam */
-    height: 20px;
-    background: rgba(255, 255, 255, 0.6); /* Brighter light effect */
+    transform: translate(-50%, -50%) scale(0);
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 50%;
-    box-shadow: 0 0 20px 4px rgba(255, 255, 255, 0.6); /* Enhanced glowing effect */
-    z-index: -1; /* Ensures lighting doesn't overlap text */
+    opacity: 0;
+    pointer-events: none;  /* Make sure it doesn't interfere with button functionality */
+    z-index: 1;
+    transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
 .cta-button:hover {
-    background: linear-gradient(135deg, #004e7a, #0586d1); /* Gradient shift on hover */
-    transform: translateY(-3px); /* More pronounced hover effect */
-    box-shadow: 0 9px 25px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+    background: linear-gradient(135deg, #0a0a0a, #050505);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
 }
+
+.cta-button:active::before,
+.cta-button:focus::before {
+    transform: translate(-50%, -50%) scale(2);
+    opacity: 1;
+}
+
+.cta-button:active,
+.cta-button:focus {
+    background: linear-gradient(135deg, #050505, #0a0a0a);
+    transform: translateY(-1px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
 
 
 /* Footer Styling */
