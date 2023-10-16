@@ -148,11 +148,11 @@ nav a:focus {
     background: linear-gradient(135deg, #0586d1, #004e7a); /* Modified gradient */
     color: #fff;
     padding: 12px 55px;
-    font-size: 1.2em;
+    font-size: 1em;
     border: none;
     border-radius: 50px;
     transition: background 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
-    font-weight: 600; /* Bolder text */
+    font-weight: 550; /* Bolder text */
     font-family: 'Montserrat', sans-serif;
     box-shadow: 0 7px 20px rgba(0, 0, 0, 0.25); /* More pronounced shadow */
     position: relative; /* For the pseudo-elements */
@@ -162,10 +162,10 @@ nav a:focus {
 .cta-button::after {
     content: "";
     position: absolute;
-    bottom: -10px;
+    bottom: -18px;
     left: 50%;
     transform: translateX(-50%);
-    width: 90%; /* Wider light beam */
+    width: 75%; /* Wider light beam */
     height: 20px;
     background: rgba(255, 255, 255, 0.6); /* Brighter light effect */
     border-radius: 50%;
