@@ -156,7 +156,8 @@ nav a:focus {
     overflow: hidden; /* Ensures inner lighting doesn't go outside the button */
     user-select: none;
     z-index: 10;
-    font-family: 'Pacifico';
+    font-family: 'Montserrat', sans-serif;
+   
 }
 
 /* Adding lighting effect at the bottom of the UFO */
