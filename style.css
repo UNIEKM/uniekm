@@ -71,7 +71,7 @@ nav a:focus {
 }
 
 #hero h1 {
-    font-size: 6em;
+    font-size: 4em;
     align-self: center;
     margin-bottom: 20px;
     margin-top: 5%;
@@ -263,7 +263,7 @@ nav {
 
 /* General Responsive Text Sizing */
 body {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 /* Tablets - landscape and portrait */
