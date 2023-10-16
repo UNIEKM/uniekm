@@ -52,7 +52,8 @@ nav a {
 }
 
 nav a:focus {
-    outline: 2px solid #0586d1;  /* Adjust color as per your design */
+    outline: none;
+    background-color: transparent;
 }
 
 
@@ -404,9 +405,9 @@ body {
         font-weight: 500;
         transition: background-color 0.3s ease;
     }
-
     nav a:hover {
-        background-color: #0369a1;
-    }
+        background-color: transparent;
+    }    
+  
 }
 
