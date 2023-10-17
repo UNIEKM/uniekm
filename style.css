@@ -147,7 +147,7 @@ nav a:focus {
 
 .cta-button {
     text-decoration: none;
-    background: linear-gradient(135deg, #080808d5, #080808);
+    background: #333; /* Dark color for luxury feel */
     color: #fff;
     padding: 12px 45px;
     font-size: 1.1em;
@@ -178,12 +178,13 @@ nav a:focus {
     pointer-events: none;  /* Make sure it doesn't interfere with button functionality */
     z-index: 1;
     transition: transform 0.4s ease, opacity 0.4s ease;
+    border: 2px solid gold; /* Border to make the button pop */
 }
 
 .cta-button:hover {
-    background: linear-gradient(135deg, #0a0a0a, #050505);
-    transform: translateY(-3px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    background-color: gold;
+    color: #333;
+    transition: all 0.3s ease-in-out;
 }
 
 .cta-button:active::before,
@@ -288,6 +289,7 @@ nav {
 body {
     font-size: 12px;
 }
+
 
 /* Tablets - landscape and portrait */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
