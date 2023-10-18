@@ -16,7 +16,7 @@ body {
 
 /* Header Styling */
 header {
-    background: #0e0e0e2f;
+    background: #0e0e0e00;
     color: #fff;
     padding: 1em 2em;
     display: flex;
@@ -26,6 +26,16 @@ header {
     z-index: 2;
     user-select: none;
 }
+
+/* Footer Styling */
+footer {
+    background: #33333300;
+    color: #fff;
+    text-align: center;
+    padding: 1em 2em;
+    z-index: 2;
+}
+
 
 #logo, nav ul, nav ul li, nav a {
     position: relative;
@@ -187,16 +197,6 @@ nav a:focus {
   }
   
   
-
-/* Footer Styling */
-footer {
-    background: #33333300;
-    color: #fff;
-    text-align: center;
-    padding: 1em 2em;
-    z-index: 2;
-}
-
 /* Style for the UFO icon container */
 .ufo-icon-container {
     display: inline-block; /* Display the container inline with the text */
