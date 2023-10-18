@@ -159,10 +159,10 @@ nav a:focus {
     display: inline-flex; /* Updated to flex for better alignment */
     align-items: center; /* Ensure vertical alignment */
     justify-content: center; /* Center content horizontally */
-    font-weight: 600;
-    font-size: 18px;
+    font-weight: 700;
+    font-size: 20px;
     padding: 0 16px;
-    line-height: 48px;
+    line-height: 46px;
     text-decoration: none;
     user-select: none;
     -webkit-user-select: none;
@@ -273,7 +273,7 @@ nav {
 
 /* General Responsive Text Sizing */
 body {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 
