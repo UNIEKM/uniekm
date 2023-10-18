@@ -26,7 +26,7 @@
             "anim": {
                 "enable": true,
                 "speed": 0.7,
-                "opacity_min": 0.4,
+                "opacity_min": 0.5,
                 "sync": false
             }
         },
