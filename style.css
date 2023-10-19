@@ -1,41 +1,49 @@
+/* CSS Variables */
+:root {
+    --main-bg-color: #161616;
+    --header-footer-bg-color: #0e0e0e00;
+    --text-color: #fff;
+    --cta-bg-color: #fbeee0;
+    --cta-text-color: #422800;
+    --cta-hover-color: #fff;
+    --cta-border-color: #422800;
+    --cta-shadow-color: #422800;
+    --main-font-size: 1em;
+    --hero-font-size: 4em;
+    --nav-link-font-size: 0.9em;
+    --cta-font-size: 20px;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styling */
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
-    background: #161616;
-    min-height: 100vh; /* ensures body takes full viewport height */
+    background: var(--main-bg-color);
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    font-size: var(--main-font-size);
 }
 
-/* Header Styling */
-header {
-    background: #0e0e0e00;
-    color: #fff;
+/* Header & Footer Styling */
+header, footer {
+    background: var(--header-footer-bg-color);
+    color: var(--text-color);
+    text-align: center;
     padding: 1em 2em;
+}
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    z-index: 2;
-    user-select: none;
 }
-
-/* Footer Styling */
-footer {
-    background: #33333300;
-    color: #fff;
-    text-align: center;
-    padding: 1em 2em;
-    z-index: 2;
-}
-
 
 #logo, nav ul, nav ul li, nav a {
     position: relative;
@@ -43,11 +51,12 @@ footer {
 }
 
 #logo {
-    font-size: 1.5em;
+    font-size: 1.3em; /* Updated font-size */
 }
 
 nav ul {
     list-style-type: none;
+    padding-left: 0; /* Remove padding */
 }
 
 nav ul li {
@@ -58,31 +67,32 @@ nav ul li {
 nav a {
     color: #fff;
     text-decoration: none;
-    font-size: 0.9em;
+    font-size: 1em; /* Updated font-size */
+    transition: color 0.5s ease-in-out; /* Smooth color transition */
 }
 
-nav a:focus {
+nav a:hover, nav a:focus {
+    color: #f8d64e; /* Updated hover and focus color */
     outline: none;
     background-color: transparent;
 }
 
 
 /* Hero Section Styling */
-#hero {
-    
+#hero, #hero1 {
     color: #fff;
     text-align: center;
     padding: 6em 2em;
-    flex-grow: 1; /* allows this section to grow and take up available space */
+    flex-grow: 1; /* allows these sections to grow and take up available space */
 }
 
-#hero h1, #hero p, .cta-button {
+#hero h1, #hero p, #hero1 h1, #hero1 p, .cta-button {
     position: relative;
     z-index: 2;
 }
 
 #hero h1 {
-    font-size: 4em;
+    font-size: 5em; /* Updated font-size */
     align-self: center;
     margin-bottom: 20px;
     margin-top: 5%;
@@ -91,31 +101,17 @@ nav a:focus {
 }
 
 #hero p {
-    font-size: 1.2em;
+    font-size: 1.3em; /* Updated font-size */
     margin-bottom: 40px;
     user-select: none;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-weight: 600; /* Adjust value as needed */
-    font-family: 'Roboto', sans-serif; /* Explicitly set Roboto font for paragraphs */
-
-    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Darker text shadow */
+    font-weight: 700; /* Bold font weight */
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Hero1 Section Styling */
-#hero1 {
-    color: #fff;
-    text-align: center;
-    padding: 6em 2em;
-    flex-grow: 1; /* allows this section to grow and take up available space */
-}
-
-#hero1 h1, #hero1 p, .cta-button {
-    position: relative;
-    z-index: 2;
-}
-
 #hero1 h1 {
-    font-size: 6em;
+    font-size: 7em; /* Updated font-size */
     align-self: center;
     margin-bottom: 20px;
     margin-top: 0.7%;
@@ -124,13 +120,12 @@ nav a:focus {
 }
 
 #hero1 p {
-    font-size: 1.2em;
+    font-size: 1.4em; /* Updated font-size */
     margin-bottom: 30px;
     user-select: none;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-weight: 500; /* Adjust value as needed */
-    font-family: 'Roboto', sans-serif; /* Explicitly set Roboto font for paragraphs */
-
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Darker text shadow */
+    font-weight: 700; /* Bold font weight */
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -145,8 +140,8 @@ nav a:focus {
     width: 100%;
     height: 100%;
     z-index: 1;
-    opacity: 0.8;
-    border-radius: 100px;  /* Adjust this value as needed */
+    opacity: 0.9;
+    border-radius: 50px;  /* Adjust this value as needed */
 }
 
 #threeCanvas {
@@ -156,8 +151,6 @@ nav a:focus {
     width: 100%;
     height: 100%;
 }
-
-
 
 .cta-button {
     background-color: #fbeee0;
@@ -178,16 +171,17 @@ nav a:focus {
     -webkit-user-select: none;
     touch-action: manipulation;
     font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0.5, 0.5, 0.5, 0.5); /* Adjust shadow as needed */
   }
     
   .cta-button:hover {
-    background-color: #fff;
-  }
-    
-  .cta-button:active {
+    background-color: #ffd5b8;  /* Lighter orange color on hover */
+}
+
+.cta-button:active {
     box-shadow: #422800 2px 2px 0 0;
-    transform: translate(2px, 2px);
-  }
+    transform: translate(1px, 1px);  /* Less movement for a subtler "click" effect */
+}
   
   .button-logo {
     height: 24px;
@@ -195,7 +189,7 @@ nav a:focus {
     vertical-align: middle;
     margin-right: -4px; /* Adjusted to bring image and text closer */
   }
-  
+
   
 /* Style for the UFO icon container */
 .ufo-icon-container {
@@ -249,17 +243,21 @@ footer p {
 
 /* Enhanced Navigation Styles */
 nav {
-    position: relative;
+    position: sticky;  /* Makes the navigation bar stick to the top of the page */
+    top: 0;  /* Aligns the navigation bar to the top of the page */
+    z-index: 1000;  /* Ensures the navigation bar is above other content */
+    background-color: #00000000; /* Adds a background color to make text easily readable */
 }
 
 #mobile-menu-icon {
-    display: none;
+    display: none;  /* Remains hidden until needed for responsiveness */
     cursor: pointer;
-    font-size: 24px;
+    font-size: 30px;  /* Increases the size of the mobile menu icon */
 }
 
 #nav-list {
-    transition: max-height 0.3s ease-in-out;
+    transition: max-height 0.4s ease-in-out;  /* Smoothens the transition effect */
+    background-color: #00000000; /* Adds a background color to dropdown menu */
 }
 
 /* Enhanced Hero Section */
@@ -268,50 +266,52 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.7); /* Darkens the shadow for better visibility */
 }
 
 /* General Responsive Text Sizing */
 body {
-    font-size: 16px;
+    font-size: 18px; /* Slightly larger base font size for better readability */
+    line-height: 1.6; /* Improved line spacing for better text flow and readability */
 }
 
 
-/* Tablets - landscape and portrait */
+/* Tablet Styles: Landscape & Portrait */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     #hero h1 {
-        font-size: 0.7em; /* Decreased font size for Samsung S21+ */
+        font-size: 0.7em;
     }
 
     nav a {
-        font-size: 0.4em; /* Decreased font size for Samsung S21+ */
+        font-size: 0.4em;
     }
 
     footer p {
-        font-size: 0.5em; /* Decreased font size for Samsung S21+ */
+        font-size: 0.5em;
     }
 
     .cta-button {
-        padding: 8px 16px; /* Adjusted padding for smaller screens */
-        font-size: 0.6em; /* Adjusted font size for smaller screens */
+        padding: 8px 16px;
+        font-size: 0.6em;
     }
+    
     #logo {
-        font-size: 0.6em;  /* Adjust as per your preference */
+        font-size: 0.6em;
     }
     
     #logo .header-logo {
-        width: 20px;  /* Adjust as per your preference */
+        width: 20px;
     }
 }
 
-/* Small desktops and laptops */
+/* Small Desktops and Laptops */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     #hero h1 {
-        font-size: 4em; /* Decreased font size for Samsung S21+ */
+        font-size: 4em;
     }
 
     nav a {
-        font-size: 0.7em; /* Adjusted font size for Samsung S21+ */
+        font-size: 0.7em;
     }
 
     .cta-button {
@@ -320,7 +320,7 @@ body {
     }
 }
 
-/* Large desktops */
+/* Large Desktop Styles */
 @media only screen and (min-width: 1025px) {
     #hero h1 {
         font-size: 6.5em;
@@ -344,26 +344,24 @@ body {
     }
 }
 
-/* Mobile Styles and Hamburger Menu */
+/* Mobile Styles: Including Hamburger Menu */
 @media only screen and (max-width: 480px) {
     body {
         margin: 0;
-        font-family: 'Montserrat', sans-serif;  /* Ensuring consistency in font usage */
+        font-family: 'Montserrat', sans-serif;
     }
 
     #mobile-menu-icon {
         display: block;
-        /* Removed font-size and color as it's not needed with the bar approach */
         cursor: pointer;
         padding: 15px;
-        /* background-color: #161616; */
-        position: relative; /* Ensure the position is relative for the bars to position correctly */
+        position: relative;
     }
-    /* Additions for the hamburger to 'X' animation: */
+    
     .bar1, .bar2, .bar3 {
         background-color: #0586d1;
         height: 3px;
-        width: 20px;  /* Adjust width accordingly */
+        width: 20px;
         margin: 6px 0;
         transition: 0.4s;
     }
@@ -398,7 +396,6 @@ body {
     nav ul li {
         display: block;
         margin: 15px 0;
-        white-space: nowrap;
     }
 
     nav ul.active {
@@ -413,9 +410,10 @@ body {
         font-weight: 500;
         transition: background-color 0.3s ease;
     }
+    
     nav a:hover {
         background-color: transparent;
     }    
-  
 }
+
 
