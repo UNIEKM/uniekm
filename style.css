@@ -298,7 +298,29 @@ body {
         display: block;
     }
     #particles-js {
+        background-image: url('images/Agar2-modified.png');
+        background-size: auto;  /* or contain, depending on your preference */
+        background-position: center center;
+        background-repeat: no-repeat;
+        /* position: absolute; */
+        height: 100vh; 
+        width: 100vw; /* Full viewport width */
+        position: fixed; /* Position fixed to cover the viewport */
+        top: 0; /* Position it at the top */
+        left: 0; /* Position it at the left */
+        z-index: -1; /* Ensure it’s behind your content */
         background-size: 95% auto; /* Adjust the percentage as needed */
+        opacity: 0.7;
+        border-radius: 50px; 
+    }
+
+    #threeCanvas {
+        width: 100vw; /* Full viewport width */
+        height: 100vh; /* Full viewport height */
+        position: fixed; /* Position fixed to cover the viewport */
+        top: 0; /* Position it at the top */
+        left: 0; /* Position it at the left */
+        z-index: -1; /* Ensure it’s behind your content */
     }
 
     #mobile-menu-icon.toggle .bar1 {
@@ -337,17 +359,47 @@ body {
         display: flex;
     }
 
+    /* Hero Section Styling */
     #hero h1 {
-        font-size: 2.2em;
-        /* margin-bottom: 6%; */
+        font-size: 2em; /* Updated font-size */
+        align-self: center;
+        margin-bottom: 20px;
+        margin-top: 0.7%;
+        font-family: 'Pacifico', cursive;
+        user-select: none;
     }
 
     #hero p {
-        font-size: 0.9em;
+        font-size: 1em; /* Updated font-size */
+        margin-bottom: 30px;
+        user-select: none;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Darker text shadow */
+        font-weight: 700; /* Bold font weight */
+        font-family: 'Roboto', sans-serif;
+    }
+
+
+        /* Hero1 Section Styling */
+    #hero1 h1 {
+        font-size: 2.2em; /* Updated font-size */
+        align-self: center;
+        margin-bottom: 20px;
+        margin-top: 0.7%;
+        font-family: 'Pacifico', cursive;
+        user-select: none;
+    }
+
+    #hero1 p {
+        font-size: 1em; /* Updated font-size */
+        margin-bottom: 30px;
+        user-select: none;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Darker text shadow */
+        font-weight: 700; /* Bold font weight */
+        font-family: 'Roboto', sans-serif;
     }
 
     nav a, #logo {
-        font-size: 13px;
+        font-size: 16px;
     }
     .header-logo {
         width: 30px;
@@ -361,7 +413,7 @@ body {
     }
 
     footer p {
-        font-size: 10px;
+        font-size: 12px;
     }
 }
 
@@ -370,6 +422,70 @@ body {
        only screen and (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
     #hero h1 {
         font-size: 3em;
+       
+    }
+
+    #threeCanvas {
+        width: 100vw; /* Full viewport width */
+        height: 100vh; /* Full viewport height */
+        position: fixed; /* Position fixed to cover the viewport */
+        top: 0; /* Position it at the top */
+        left: 0; /* Position it at the left */
+        z-index: -1; /* Ensure it’s behind your content */
+    }
+    #particles-js {
+        background-image: url('images/Agar2-modified.png');
+        background-size: auto;  /* or contain, depending on your preference */
+        background-position: center center;
+        background-repeat: no-repeat;
+        /* position: absolute; */
+        height: 100vh; 
+        width: 100vw; /* Full viewport width */
+        position: fixed; /* Position fixed to cover the viewport */
+        top: 0; /* Position it at the top */
+        left: 0; /* Position it at the left */
+        z-index: -1; /* Ensure it’s behind your content */
+        background-size: 70% auto; /* Adjust the percentage as needed */
+        opacity: 0.7;
+        border-radius: 50px; 
+    }
+
+    /* Hero Section Styling */
+    #hero h1 {
+        font-size: 2.2em; /* Updated font-size */
+        align-self: center;
+        margin-bottom: 20px;
+        margin-top: 0.7%;
+        font-family: 'Pacifico', cursive;
+        user-select: none;
+    }
+
+    #hero p {
+        font-size: 1em; /* Updated font-size */
+        margin-bottom: 30px;
+        user-select: none;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Darker text shadow */
+        font-weight: 700; /* Bold font weight */
+        font-family: 'Roboto', sans-serif;
+    }
+
+        /* Hero1 Section Styling */
+    #hero1 h1 {
+        font-size: 3em; /* Updated font-size */
+        align-self: center;
+        margin-bottom: 20px;
+        margin-top: 0.4%;
+        font-family: 'Pacifico', cursive;
+        user-select: none;
+    }
+
+    #hero1 p {
+        font-size: 1.2em; /* Updated font-size */
+        margin-bottom: 30px;
+        user-select: none;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Darker text shadow */
+        font-weight: 700; /* Bold font weight */
+        font-family: 'Roboto', sans-serif;
     }
 
     nav a, #logo {
@@ -396,7 +512,22 @@ body {
             display: block;
         }
         #particles-js {
+            height: 100vh; 
+            width: 100vw; /* Full viewport width */
+            position: fixed; /* Position fixed to cover the viewport */
+            top: 0; /* Position it at the top */
+            left: 0; /* Position it at the left */
+            z-index: -1; /* Ensure it’s behind your content */
             background-size: 95% auto; /* Adjust the percentage as needed */
+        }
+
+        #threeCanvas {
+            width: 100vw; /* Full viewport width */
+            height: 100vh; /* Full viewport height */
+            position: fixed; /* Position fixed to cover the viewport */
+            top: 0; /* Position it at the top */
+            left: 0; /* Position it at the left */
+            z-index: -1; /* Ensure it’s behind your content */
         }
     
         #mobile-menu-icon.toggle .bar1 {
@@ -435,17 +566,47 @@ body {
             display: flex;
         }
     
+       /* Hero Section Styling */
         #hero h1 {
-            font-size: 2.2em;
-            /* margin-bottom: 6%; */
+            font-size: 2.2em; /* Updated font-size */
+            align-self: center;
+            margin-bottom: 20px;
+            margin-top: 0.7%;
+            font-family: 'Pacifico', cursive;
+            user-select: none;
+        }
+
+        #hero p {
+            font-size: 1em; /* Updated font-size */
+            margin-bottom: 30px;
+            user-select: none;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Darker text shadow */
+            font-weight: 700; /* Bold font weight */
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Hero1 Section Styling */
+        #hero1 h1 {
+            font-size: 2.2em; /* Updated font-size */
+            align-self: center;
+            margin-bottom: 20px;
+            margin-top: 0.4%;
+            font-family: 'Pacifico', cursive;
+            user-select: none;
         }
     
-        #hero p {
-            font-size: 0.8em;
+        #hero1 p {
+            font-size: 0.9em; /* Updated font-size */
+            margin-bottom: 30px;
+            user-select: none;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Darker text shadow */
+            font-weight: 700; /* Bold font weight */
+            font-family: 'Roboto', sans-serif;
         }
+
     
         nav a, #logo {
-            font-size: 13px;
+            font-size: 16px;
         }
         .header-logo {
             width: 30px;
@@ -466,9 +627,7 @@ body {
     /* Tablet Styles: Landscape & Portrait */
     @media only screen and (min-width: 481px) and (max-width: 768px), 
            only screen and (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
-        #hero h1 {
-            font-size: 3em;
-        }
+      
     
         nav a, #logo {
             font-size: 14px;
@@ -482,16 +641,139 @@ body {
         footer p {
             font-size: 10px;
         }
+        #threeCanvas {
+            width: 100vw; /* Full viewport width */
+            height: 100vh; /* Full viewport height */
+            position: fixed; /* Position fixed to cover the viewport */
+            top: 0; /* Position it at the top */
+            left: 0; /* Position it at the left */
+            z-index: -1; /* Ensure it’s behind your content */
+        }
+            /* Hero Section Styling */
+        #hero h1 {
+            font-size: 2.2em; /* Updated font-size */
+            align-self: center;
+            margin-bottom: 20px;
+            margin-top: 0.7%;
+            font-family: 'Pacifico', cursive;
+            user-select: none;
+        }
+
+        #hero p {
+            font-size: 1em; /* Updated font-size */
+            margin-bottom: 30px;
+            user-select: none;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Darker text shadow */
+            font-weight: 700; /* Bold font weight */
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Hero1 Section Styling */
+        #hero1 h1 {
+            font-size: 3em; /* Updated font-size */
+            align-self: center;
+            margin-bottom: 20px;
+            margin-top: 0.4%;
+            font-family: 'Pacifico', cursive;
+            user-select: none;
+        }
+    
+        #hero1 p {
+            font-size: 0.9em; /* Updated font-size */
+            margin-bottom: 30px;
+            user-select: none;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Darker text shadow */
+            font-weight: 700; /* Bold font weight */
+            font-family: 'Roboto', sans-serif;
+        }
+        .cta-button {
+            background-color: #fbeee0;
+            border: 2px solid #422800;
+            border-radius: 30px;
+            box-shadow: #422800 3.5px 3.5px 0 0;
+            color: #422800;
+            cursor: pointer;
+            display: inline-flex; /* Updated to flex for better alignment */
+            align-items: center; /* Ensure vertical alignment */
+            justify-content: center; /* Center content horizontally */
+            font-weight: 700;
+            font-size: 22px;
+            padding: 0 18px;
+            line-height: 50px;
+            text-decoration: none;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            font-family: 'Roboto', sans-serif;
+            text-shadow: 1px 1px 2px rgba(0.5, 0.5, 0.5, 0.5); /* Adjust shadow as needed */
+          }
     }
 
 /* Small Desktops and Laptops */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    #hero h1 {
-        font-size: 4em;
-    }
 
     nav a, #logo {
         font-size: 18px;
+    }
+    #threeCanvas {
+        width: 100vw; /* Full viewport width */
+        height: 100vh; /* Full viewport height */
+        position: fixed; /* Position fixed to cover the viewport */
+        top: 0; /* Position it at the top */
+        left: 0; /* Position it at the left */
+        z-index: -1; /* Ensure it’s behind your content */
+    }
+    #particles-js {
+        background-image: url('images/Agar2-modified.png');
+        background-size: auto;  /* or contain, depending on your preference */
+        background-position: center center;
+        background-repeat: no-repeat;
+        /* position: absolute; */
+        height: 100vh; 
+        width: 100vw; /* Full viewport width */
+        position: fixed; /* Position fixed to cover the viewport */
+        top: 0; /* Position it at the top */
+        left: 0; /* Position it at the left */
+        z-index: -1; /* Ensure it’s behind your content */
+        background-size: 60% auto; /* Adjust the percentage as needed */
+        opacity: 0.7;
+        border-radius: 50px; 
+    }
+    /* Hero Section Styling */
+    #hero h1 {
+        font-size: 2.2em; /* Updated font-size */
+        align-self: center;
+        margin-bottom: 20px;
+        margin-top: 0.6%;
+        font-family: 'Pacifico', cursive;
+        user-select: none;
+    }
+
+    #hero p {
+        font-size: 1em; /* Updated font-size */
+        margin-bottom: 30px;
+        user-select: none;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Darker text shadow */
+        font-weight: 700; /* Bold font weight */
+        font-family: 'Roboto', sans-serif;
+    }
+    /* Hero1 Section Styling */
+    #hero1 h1 {
+        font-size: 4.4em; /* Updated font-size */
+        align-self: center;
+        margin-bottom: 20px;
+        margin-top: 0.4%;
+        font-family: 'Pacifico', cursive;
+        user-select: none;
+    }
+
+    #hero1 p {
+        font-size: 2em; /* Updated font-size */
+        margin-bottom: 30px;
+        user-select: none;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Darker text shadow */
+        font-weight: 700; /* Bold font weight */
+        font-family: 'Roboto', sans-serif;
     }
 
     .cta-button {
@@ -505,7 +787,7 @@ body {
         align-items: center; /* Ensure vertical alignment */
         justify-content: center; /* Center content horizontally */
         font-weight: 700;
-        font-size: 26px;
+        font-size: 24px;
         padding: 0 18px;
         line-height: 50px;
         text-decoration: none;
@@ -524,7 +806,7 @@ body {
 /* Large Desktop Styles */
 @media only screen and (min-width: 1025px) {
     #hero h1 {
-        font-size: 6.5em;
+        font-size: 5.8em;
     }
     #hero p {
         font-size: 1.8em;
@@ -560,4 +842,97 @@ body {
     footer p {
         font-size: 16px;
     }
+
+    /* Mobile Styles: Specifically for Samsung S8 and similar */
+@media only screen and (max-width: 360px) {
+    #mobile-menu-icon {
+        display: block;
+    }
+
+    /* Ensuring the canvas takes full width and height */
+    #threeCanvas {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    #particles-js {
+        height: 100vh; 
+        background-size: 95% auto; /* Adjust the percentage as needed */
+    }
+
+    /* Styling navigation, headers, footers, and buttons for smaller screens */
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 15px 0;
+    }
+
+    #hero h1 {
+        font-size: 2.5em;
+        
+    }
+
+    /* Hero1 Section Styling */
+    #hero1 h1 {
+        font-size: 2.2em; /* Updated font-size */
+        align-self: center;
+        margin-bottom: 20px;
+        margin-top: 0.4%;
+        font-family: 'Pacifico', cursive;
+        user-select: none;
+    }
+
+    #hero1 p {
+        font-size: 0.9em; /* Updated font-size */
+        margin-bottom: 30px;
+        user-select: none;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Darker text shadow */
+        font-weight: 700; /* Bold font weight */
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #hero p {
+        font-size: 1em;
+    }
+
+    nav a, #logo {
+        font-size: 14px;
+    }
+
+    .cta-button {
+        background-color: #fbeee0;
+        border: 2px solid #422800;
+        border-radius: 30px;
+        box-shadow: #422800 3.5px 3.5px 0 0;
+        color: #422800;
+        cursor: pointer;
+        display: inline-flex; /* Updated to flex for better alignment */
+        align-items: center; /* Ensure vertical alignment */
+        justify-content: center; /* Center content horizontally */
+        font-weight: 700;
+        font-size: 22px;
+        padding: 0 18px;
+        line-height: 50px;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        font-family: 'Roboto', sans-serif;
+        text-shadow: 1px 1px 2px rgba(0.5, 0.5, 0.5, 0.5); /* Adjust shadow as needed */
+      }
+
+    footer p {
+        font-size: 12px;
+    }
+}
+
 }
