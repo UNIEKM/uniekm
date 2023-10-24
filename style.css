@@ -152,35 +152,38 @@ nav a:hover, nav a:focus {
     height: 100%;
 }
 
-.cta-button {
-    background-color: #fbeee0;
+.cta-button2 {
+    background-color: #ffffff;
     border: 2px solid #422800;
     border-radius: 30px;
-    box-shadow: #422800 4px 4px 0 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 0 0 0 rgba(245, 165, 35, 0.6);  /* Dual shadow: subtle shadow + gradient shadow */
     color: #422800;
     cursor: pointer;
-    display: inline-flex; /* Updated to flex for better alignment */
-    align-items: center; /* Ensure vertical alignment */
-    justify-content: center; /* Center content horizontally */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 700;
-    font-size: 20px;
-    padding: 0 16px;
-    line-height: 45px;
+    font-size: 14px;
+    padding: 0 14px;
+    line-height: 20px;
     text-decoration: none;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
     font-family: 'Roboto', sans-serif;
-    text-shadow: 1px 1px 2px rgba(0.5, 0.5, 0.5, 0.5); /* Adjust shadow as needed */
-  }
+    text-shadow: 1px 1px 2px rgba(0.5, 0.5, 0.5, 0.5);
+    transition: all 0.3s ease;  /* Smooth transition for hover effects */
+}
     
-  .cta-button:hover {
-    background-color: #ffd5b8;  /* Lighter orange color on hover */
+.cta-button2:hover {
+    background-color: #ffd5b8;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 4px 20px rgba(245, 165, 35, 0.6);  /* Elevated shadow effect on hover */
+    transform: translateY(-2px);  /* Slight lift effect on hover */
 }
 
-.cta-button:active {
-    box-shadow: #422800 2px 2px 0 0;
-    transform: translate(1px, 1px);  /* Less movement for a subtler "click" effect */
+.cta-button2:active {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1), 0 0 0 0 rgba(245, 165, 35, 0.6);  /* Pressed-in effect on active */
+    transform: translateY(1px);
 }
   
   .button-logo {
@@ -189,6 +192,123 @@ nav a:hover, nav a:focus {
     vertical-align: middle;
     margin-right: -4px; /* Adjusted to bring image and text closer */
   }
+
+ 
+/*SHOP HOMEPAGE BUTTON*/
+.cta-button1 {
+    background-color: #ffffff;
+    border: 2px solid #422800;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 0 0 0 rgba(245, 165, 35, 0.6);  /* Dual shadow: subtle shadow + gradient shadow */
+    color: #422800;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 0 18px;
+    line-height: 45px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0.5, 0.5, 0.5, 0.5);
+    transition: all 0.3s ease;  /* Smooth transition for hover effects */
+}
+    
+.cta-button1:hover {
+    background-color: #ffd5b8;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 4px 20px rgba(245, 165, 35, 0.6);  /* Elevated shadow effect on hover */
+    transform: translateY(-2px);  /* Slight lift effect on hover */
+}
+
+.cta-button1:active {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1), 0 0 0 0 rgba(245, 165, 35, 0.6);  /* Pressed-in effect on active */
+    transform: translateY(1px);
+}
+
+
+
+
+
+/*SHOP STYLE*/
+
+/* Products Grid Container */
+.products-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr; 
+    gap: 2rem;
+    perspective: 1000px; /* Enables 3D space for children */
+}
+
+/* Sidebar Styling */
+.sidebar {
+    padding: 1rem;
+    border: 1px solid #555;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.05);
+    transform-style: preserve-3d; /* Enables 3D transformations */
+    transition: transform 0.5s;
+}
+
+.sidebar:hover {
+    transform: rotateY(20deg); /* 3D rotation on hover */
+}
+
+/* Main Shop Content */
+.shop-content {
+    padding: 2rem;
+}
+
+/* Product Card */
+.product-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #555;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.05);
+    transform-style: preserve-3d;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.product-card:hover {
+    transform: rotateX(10deg) scale(1.05);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Product Image (assuming you might have one) */
+.product-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Product Name and Price Styling */
+.product-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.product-price {
+    color: #ffd5b8;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+
 
   
 /* Style for the UFO icon container */
