@@ -190,11 +190,11 @@ nav a:hover, nav a:focus {
     height: 24px;
     width: 24px;
     vertical-align: middle;
-    margin-right: -4px; /* Adjusted to bring image and text closer */
+    margin-right: -2px; /* Adjusted to bring image and text closer */
   }
 
  
-/*SHOP HOMEPAGE BUTTON*/
+
 .cta-button1 {
     background-color: #ffffff;
     border: 2px solid #422800;
@@ -527,9 +527,10 @@ body {
         margin-right: 6px;
     }
 
-    .cta-button {
+    .cta-button1 {
         font-size: 18px;
         line-height: 40px;
+        z-index: 3;
     }
 
     footer p {
@@ -612,9 +613,10 @@ body {
         font-size: 14px;
     }
 
-    .cta-button {
+    .cta-button1 {
         font-size: 24px;
         line-height: 45px;
+        z-index: 3;
     }
 
     footer p {
@@ -734,9 +736,10 @@ body {
             margin-right: 6px;
         }
     
-        .cta-button {
+        .cta-button1 {
             font-size: 18px;
             line-height: 40px;
+            z-index: 3;
         }
     
         footer p {
@@ -806,7 +809,7 @@ body {
             font-weight: 700; /* Bold font weight */
             font-family: 'Roboto', sans-serif;
         }
-        .cta-button {
+        .cta-button1 {
             background-color: #fbeee0;
             border: 2px solid #422800;
             border-radius: 30px;
@@ -826,6 +829,7 @@ body {
             touch-action: manipulation;
             font-family: 'Roboto', sans-serif;
             text-shadow: 1px 1px 2px rgba(0.5, 0.5, 0.5, 0.5); /* Adjust shadow as needed */
+            z-index: 3;
           }
     }
 
@@ -896,7 +900,7 @@ body {
         font-family: 'Roboto', sans-serif;
     }
 
-    .cta-button {
+    .cta-button1 {
         background-color: #fbeee0;
         border: 2px solid #422800;
         border-radius: 30px;
@@ -916,6 +920,7 @@ body {
         touch-action: manipulation;
         font-family: 'Roboto', sans-serif;
         text-shadow: 1px 1px 2px rgba(0.5, 0.5, 0.5, 0.5); /* Adjust shadow as needed */
+        z-index: 3;
       }
 
     footer p {
@@ -937,7 +942,7 @@ body {
         font-size: 22px;
     }
 
-    .cta-button {
+    .cta-button1 {
         background-color: #fbeee0;
         border: 2px solid #422800;
         border-radius: 30px;
@@ -948,7 +953,7 @@ body {
         align-items: center; /* Ensure vertical alignment */
         justify-content: center; /* Center content horizontally */
         font-weight: 700;
-        font-size: 26px;
+        font-size: 24px;
         padding: 0 18px;
         line-height: 50px;
         text-decoration: none;
@@ -957,6 +962,7 @@ body {
         touch-action: manipulation;
         font-family: 'Roboto', sans-serif;
         text-shadow: 1px 1px 2px rgba(0.5, 0.5, 0.5, 0.5); /* Adjust shadow as needed */
+        z-index: 3;
       }
 
     footer p {
@@ -1028,7 +1034,7 @@ body {
         font-size: 14px;
     }
 
-    .cta-button {
+    .cta-button1 {
         background-color: #fbeee0;
         border: 2px solid #422800;
         border-radius: 30px;
@@ -1048,6 +1054,7 @@ body {
         touch-action: manipulation;
         font-family: 'Roboto', sans-serif;
         text-shadow: 1px 1px 2px rgba(0.5, 0.5, 0.5, 0.5); /* Adjust shadow as needed */
+       
       }
 
     footer p {
