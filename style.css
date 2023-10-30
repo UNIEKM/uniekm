@@ -111,10 +111,10 @@ nav a:hover, nav a:focus {
 
 /* Hero1 Section Styling */
 #hero1 h1 {
-    font-size: 7em; /* Updated font-size */
+    font-size: 6em; /* Updated font-size */
     align-self: center;
     margin-bottom: 20px;
-    margin-top: 0.7%;
+    margin-top: 0.2%;
     font-family: 'Pacifico', cursive;
     user-select: none;
 }
@@ -238,9 +238,8 @@ nav a:hover, nav a:focus {
 /* Products Grid Container */
 .products-grid {
     display: grid;
-    grid-template-columns: 1fr 3fr; 
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust the minmax values according to your design needs */
     gap: 2rem;
-    perspective: 1000px; /* Enables 3D space for children */
 }
 
 /* Sidebar Styling */
@@ -277,15 +276,15 @@ nav a:hover, nav a:focus {
 }
 
 .product-card:hover {
-    transform: rotateX(10deg) scale(1.05);
+    transform: rotateX(1deg) scale(1.01);
     box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
 }
 
 /* Product Image (assuming you might have one) */
 .product-image {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
+    max-width: 100px;
+    max-height: 100px;
+    object-fit:contain;
     border-radius: 50%;
     margin-right: 1rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -932,6 +931,14 @@ body {
 @media only screen and (min-width: 1025px) {
     #hero h1 {
         font-size: 5.8em;
+    }
+    #hero1 h1 {
+        font-size: 4em; /* Updated font-size */
+        align-self: center;
+        margin-bottom: 20px;
+        margin-top: 0%;
+        font-family: 'Pacifico', cursive;
+        user-select: none;
     }
     #hero p {
         font-size: 1.8em;
